@@ -16,10 +16,12 @@ Shared Preferences
 
 ------------------------------------------------------------------------------------
 
-#Daniel: 
+#Daniel: Formating JSON News Articles
 
-#Brandon:
+#Brandon: Updating Button Firebase
 
-#Korey:
+#Korey: Artical Page
 
-#Fifer:
+#Fifer: Home Screen 
+
+
