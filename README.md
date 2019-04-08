@@ -31,8 +31,8 @@ edit .git/config file under your repo directory
 
 find url=entry under section [remote "origin"]
 
-change it from url=https://github.com/derekerdmann/lunch_call.git to url=ssh://git@github.com/derekerdmann/lunch_call.git. 
-
+change it from url=https://github.com/lit-luscious-lion-luchadors/The-Universal-Telegram.git to url=ssh://git@github.com/lit-luscious-lion-luchadors/The-Universal-Telegram
+	
 that is, change all the texts before @ symbol to ssh://git@
 
 Save config file and quit. now you could use git push origin master to sync your repo on GitHub
