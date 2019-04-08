@@ -24,10 +24,15 @@ Shared Preferences
 
 #Fifer: Home Screen 
 
+---------------------------------------------------------------------
 DO THIS IF YOU HAVE TRUBBLE PUSHING:
 
 edit .git/config file under your repo directory
+
 find url=entry under section [remote "origin"]
-change it from url=https://MichaelDrogalis@github.com/derekerdmann/lunch_call.git to url=ssh://git@github.com/derekerdmann/lunch_call.git. that is, change all the texts before @ symbol to ssh://git
-    (DANS NOTE: MAKE SURE IT SAYS ssh://git@   so on so forth)
+
+change it from url=https://github.com/derekerdmann/lunch_call.git to url=ssh://git@github.com/derekerdmann/lunch_call.git. 
+
+that is, change all the texts before @ symbol to ssh://git@
+
 Save config file and quit. now you could use git push origin master to sync your repo on GitHub
