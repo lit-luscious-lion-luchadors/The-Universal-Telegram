@@ -25,6 +25,10 @@ Shared Preferences
 #Fifer: Home Screen 
 
 ---------------------------------------------------------------------
+
+Google Slides link: https://docs.google.com/presentation/d/1ZOAOGTq8RZilpk1OW3kiJ5ipfP-SLu80_LlnN3w03M8/edit?usp=sharing
+
+---------------------------------------------------------------------
 DO THIS IF YOU HAVE TRUBBLE PUSHING:
 
 edit .git/config file under your repo directory
