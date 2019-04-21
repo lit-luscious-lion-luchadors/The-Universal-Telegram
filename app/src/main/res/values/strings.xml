@@ -17,4 +17,6 @@
     <string name="article2String">Ben and Jerry\'s calling for people charged with the possession of marijuana to be released from prison with all charges drop. What does the ice cream company have in mind?</string>
     <string name="topArticles">Top Articles</string>
     <string name="otherArticles">Other Popular Articles</string>
+    <string name="HeadlinesJSON">Headlines JSON</string>
+    <string name="title_activity_pulling_news_from_json">PullingNewsFromJSON</string>
 </resources>

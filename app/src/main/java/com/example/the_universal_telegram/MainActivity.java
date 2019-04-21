@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     Button articlePageButton;
     Button fireBaseTesterButton;
     Button homepageButton;
+    Button headlineButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         articlePageButton  = (Button) findViewById(R.id.articlePageButton);
         fireBaseTesterButton = (Button) findViewById(R.id.fireBaseTestButton);
         homepageButton = (Button) findViewById(R.id.homepageButton);
+        headlineButton = (Button) findViewById (R.id.Headlines);
 
         articlePageButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -39,5 +41,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, homePageActivity.class));
             }
         });
+
+        headlineButton.setOnClickListener (new View.OnClickListener ( ) {
+            @Override
+            public void onClick(View v) {
+                startActivity (new Intent (MainActivity.this, PullingNewsFromJSON.class));
+            }
+        });
+
     }
 }
