@@ -117,7 +117,7 @@
             android:background="@drawable/back2"
             android:drawableLeft="@drawable/drump"
             android:drawablePadding="5dp"
-            android:margin="10dp"
+
             android:text="@string/article1String" />
 
         <TextView
@@ -128,7 +128,7 @@
             android:background="@drawable/back2"
             android:drawableLeft="@drawable/icecream"
             android:drawablePadding="5dp"
-            android:margin="10dp"
+
             android:text="@string/article2String" />
 
         <TextView
