@@ -101,12 +101,12 @@
 
         <TextView
             android:id="@+id/article1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="111dp"
             android:layout_gravity="center"
-            android:background="@color/light_brown"
+            android:background="@drawable/back2"
             android:drawableLeft="@drawable/drump"
-            android:drawablePadding="10dp"
+            android:drawablePadding="5dp"
             android:marginRight="10dp"
             android:text="@string/article1String" />
 
