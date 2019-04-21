@@ -14,4 +14,7 @@
     <string name="search_bar">#Search Tags</string>
     <string name="homepage_button">go to homepage</string>
     <string name="article1String">Following the release of the Mueller Report, President Trump\'s approval rating dips even further. Can anything save the cheeto man from impeachment now?</string>
+    <string name="article2String">Ben and Jerry\'s calling for people charged with the possession of marijuana to be released from prison with all charges drop. What does the ice cream company have in mind?</string>
+    <string name="topArticles">Top Articles</string>
+    <string name="otherArticles">Other Popular Articles</string>
 </resources>
