@@ -9,4 +9,5 @@
     <string name="fireBaseTester">Go to FireBase test area</string>
     <string name="incrementerText">Click to increment counter</string>
     <string name="counterResetText">Click to reset counter</string>
+    <string name="title_activity_home_page">homePageActivity</string>
 </resources>
