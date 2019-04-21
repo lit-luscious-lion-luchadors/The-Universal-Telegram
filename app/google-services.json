@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "362613927968",
+    "firebase_url": "https://universal-telegram.firebaseio.com",
+    "project_id": "universal-telegram",
+    "storage_bucket": "universal-telegram.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362613927968:android:c7325499e6cb24f8",
+        "android_client_info": {
+          "package_name": "com.example.the_universal_telegram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362613927968-h7tg9tkkgln3armrv9ojcta5m3rhq2i3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.the_universal_telegram",
+            "certificate_hash": "3ccb277032f16aa85bc57826d5ab14ed8074c7d0"
+          }
+        },
+        {
+          "client_id": "362613927968-c2bujs3j5925oe84ee2o84ijpjnp917r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH7sDPqIemrLA7ndBFCl8LE-daIenJw8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362613927968-c2bujs3j5925oe84ee2o84ijpjnp917r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
