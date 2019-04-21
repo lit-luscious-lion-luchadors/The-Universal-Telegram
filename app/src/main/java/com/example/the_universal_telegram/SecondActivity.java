@@ -23,6 +23,8 @@ public class SecondActivity extends AppCompatActivity{
         setContentView(R.layout.activity_second);
 
         homeButton  = (Button) findViewById(R.id.home);
+        articleBody = (TextView) findViewById(R.id.bodyText);
+        articleTitle = (TextView) findViewById(R.id.title);
 
         homeButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -49,5 +51,7 @@ public class SecondActivity extends AppCompatActivity{
         articleTitle.setText(savedInstanceState.getString("articleTitle"));
 
     }
+
+
 
 }
