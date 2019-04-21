@@ -1,12 +1,14 @@
 package com.example.the_universal_telegram;
 
 import android.nfc.Tag;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -16,6 +18,7 @@ import com.google.firebase.database.Exclude;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.MutableData;
 import com.google.firebase.database.Transaction;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,7 +30,9 @@ public class UpdatingFireBaseButtonActivity extends AppCompatActivity {
     private Button resetter;
 
     private FirebaseDatabase mFirebaseDatabase;
-    private DatabaseReference mCountDatabaseReference;
+    private DatabaseReference mDatabaseReference;
+
+    private int upVoteCount;
 
     private static final String TAG = "FirebaseActivity";
 
@@ -41,12 +46,14 @@ public class UpdatingFireBaseButtonActivity extends AppCompatActivity {
         resetter = (Button) findViewById(R.id.resetter);
 
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mCountDatabaseReference = mFirebaseDatabase.getReference().child("count");
+        mDatabaseReference = mFirebaseDatabase.getReference();
+
 
 
         incrementer.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-
+                onUpVoted(mDatabaseReference);
+                counter.setText(String.valueOf(upVoteCount));
             }
         });
 
@@ -55,22 +62,37 @@ public class UpdatingFireBaseButtonActivity extends AppCompatActivity {
 
             }
         });
+
+        ValueEventListener upVoteListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String value = "";
+                for (DataSnapshot childSnapshot: dataSnapshot.getChildren()){
+                    value = childSnapshot.getValue().toString();
+                }
+                if (value != "")
+                    upVoteCount = Integer.parseInt(value.replaceAll("[\\D]", ""));
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        };
+        mDatabaseReference.addValueEventListener(upVoteListener);
     }
 
     private void onUpVoted(DatabaseReference postRef){
         postRef.runTransaction(new Transaction.Handler(){
             @Override
             public Transaction.Result doTransaction(MutableData mutableData){
-                Post p = mutableData.getValue(Post.class);
-                if (p == null) {
-                    return Transaction.success(mutableData);
-                }
-                else{
-                    p.upVoteCount = p.upVoteCount +1;
-                    p.upVotes.put(getUid(),true);
-                }
 
-                mutableData.setValue(p);
+               // Toast.makeText(UpdatingFireBaseButtonActivity.this, "inside onupvoted", Toast.LENGTH_SHORT).show();
+                upVoteCount = upVoteCount +1;
+                mDatabaseReference.child("up_votes").setValue(upVoteCount);
+                //p.upVotes.put(getUid(),true);
+
+
                 return Transaction.success(mutableData);
             }
 
@@ -80,6 +102,7 @@ public class UpdatingFireBaseButtonActivity extends AppCompatActivity {
             }
         });
     }
+/*  UNUSED CODE
 
     public class Post{
         private int upVoteCount;
@@ -113,5 +136,6 @@ public class UpdatingFireBaseButtonActivity extends AppCompatActivity {
     public String getUid(){
         return FirebaseAuth.getInstance().getCurrentUser().getUid();
     }
+*/
 
 }
