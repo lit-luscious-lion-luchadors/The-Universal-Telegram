@@ -8,11 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity{
 
     Button homeButton;
+    TextView articleBody;
+    TextView articleTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,25 @@ public class SecondActivity extends AppCompatActivity{
                 startActivity(new Intent(SecondActivity.this, MainActivity.class));
             }
         });
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+
+        super.onSaveInstanceState(savedInstanceState);
+
+        savedInstanceState.putString("articleBody",(String)articleBody.getText().toString());
+        savedInstanceState.putString("articleTitle",(String)articleTitle.getText().toString());
+
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+
+        super.onRestoreInstanceState(savedInstanceState);
+        articleBody.setText(savedInstanceState.getString("articleBody"));
+        articleTitle.setText(savedInstanceState.getString("articleTitle"));
+
     }
 
 }
