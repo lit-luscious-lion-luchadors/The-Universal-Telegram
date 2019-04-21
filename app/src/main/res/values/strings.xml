@@ -10,4 +10,7 @@
     <string name="incrementerText">Click to increment counter</string>
     <string name="counterResetText">Click to reset counter</string>
     <string name="title_activity_home_page">homePageActivity</string>
+    <string name="app_title">The Universal Telegram</string>
+    <string name="search_bar">#Search Tags</string>
+    <string name="homepage_button">go to homepage</string>
 </resources>
