@@ -115,7 +115,7 @@
             android:layout_height="111dp"
             android:layout_gravity="center"
             android:background="@drawable/back2"
-            android:drawableLeft="@drawable/drump"
+            android:drawableStart="@drawable/drump"
             android:drawablePadding="5dp"
 
             android:text="@string/article1String" />
@@ -126,7 +126,7 @@
             android:layout_height="110dp"
             android:layout_gravity="center"
             android:background="@drawable/back2"
-            android:drawableLeft="@drawable/icecream"
+            android:drawableStart="@drawable/icecream"
             android:drawablePadding="5dp"
 
             android:text="@string/article2String" />
