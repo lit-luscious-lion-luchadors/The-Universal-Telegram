@@ -50,7 +50,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/articleScrollView"
         android:layout_width="395dp"
         android:layout_height="565dp"
         android:layout_marginStart="8dp"
@@ -94,10 +94,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintBottom_toBottomOf="@+id/articleScrollView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/scrollView2"
-        app:layout_constraintTop_toTopOf="@+id/scrollView2">
+        app:layout_constraintStart_toStartOf="@+id/articleScrollView"
+        app:layout_constraintTop_toTopOf="@+id/articleScrollView">
 
         <TextView
             android:id="@+id/scrollTitle"
