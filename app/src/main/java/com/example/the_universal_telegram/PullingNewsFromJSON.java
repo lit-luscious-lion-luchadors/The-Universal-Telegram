@@ -45,7 +45,7 @@ public class PullingNewsFromJSON extends AppCompatActivity {
 
 
     private void jsonPars() {
-        String url = "'https://newsapi.org/v2/top-headlines?country=us&apiKey=d8836231103a4e108eef3650ae1e8478";
+        String url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=d8836231103a4e108eef3650ae1e8478";
         JsonObjectRequest request = new JsonObjectRequest (Request.Method.GET, url, null,
                 new Response.Listener <JSONObject> ( ) {
                     @Override
