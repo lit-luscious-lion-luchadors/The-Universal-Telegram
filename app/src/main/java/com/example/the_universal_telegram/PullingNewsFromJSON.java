@@ -2,8 +2,6 @@ package com.example.the_universal_telegram;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-<<<<<<< HEAD
-=======
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,7 +17,6 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
->>>>>>> Dan's_Branch_JSON_News
 
 public class PullingNewsFromJSON extends AppCompatActivity {
 
@@ -30,8 +27,6 @@ public class PullingNewsFromJSON extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-<<<<<<< HEAD
-=======
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_pulling_news_from_json);
 
@@ -79,7 +74,6 @@ public class PullingNewsFromJSON extends AppCompatActivity {
             }
         });
         mQueue.add(request);
->>>>>>> Dan's_Branch_JSON_News
     }
 }
 
