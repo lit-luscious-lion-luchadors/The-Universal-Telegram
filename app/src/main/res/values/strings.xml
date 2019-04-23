@@ -6,23 +6,26 @@
     <string name="submit_tag">Clear \nArticles</string>
     <string name="return_home">Return \nHome</string>
     <string name="dummy_text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and</string>
-    <string name="fireBaseTester">Go to FireBase test area</string>
+    <string name="fireBaseTester">FireBase Page</string>
     <string name="incrementerText">Click to increment counter</string>
     <string name="counterResetText">Click to reset counter</string>
     <string name="title_activity_home_page">homePageActivity</string>
     <string name="app_title">The Universal Telegram</string>
     <string name="search_bar">#Search Tags</string>
-    <string name="homepage_button">go to homepage</string>
+    <string name="homepage_button">Homepage</string>
     <string name="article1String">Following the release of the Mueller Report, President Trump\'s approval rating dips even further. Can anything save the cheeto man from impeachment now?</string>
     <string name="article2String">Ben and Jerry\'s calling for people charged with the possession of marijuana to be released from prison with all charges drop. What does the ice cream company have in mind?</string>
     <string name="topArticles">Top Articles</string>
     <string name="otherArticles">Other Popular Articles</string>
     
-    <string name="HeadlinesJSON">Headlines JSON</string>
+    <string name="HeadlinesJSON">JSON Page</string>
     <string name="title_activity_pulling_news_from_json">PullingNewsFromJSON</string>
     <string name="API_KEY">d8836231103a4e108eef3650ae1e8478</string>
     <string name="HeadlineTestJSON">~</string>
     <string name="BodyTestJSON">~~</string>
+    <string name="article_page">Article Page</string>
+    <string name="the_universal_telegram">&#160;The Universal Telegram&#160;</string>
+    <string name="home_page_button">Homepage</string>
 
 
 </resources>
