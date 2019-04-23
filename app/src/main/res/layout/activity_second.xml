@@ -34,14 +34,14 @@
         android:textStyle="bold" />
 
     <ScrollView
-        android:layout_width="391dp"
-        android:layout_height="350dp"
+        android:layout_width="404dp"
+        android:layout_height="349dp"
         android:layout_below="@+id/title"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="7dp"
         android:layout_marginTop="14dp"
-        android:layout_marginEnd="13dp">
+        android:layout_marginEnd="0dp">
 
         <TextView
             android:id="@+id/bodyText"

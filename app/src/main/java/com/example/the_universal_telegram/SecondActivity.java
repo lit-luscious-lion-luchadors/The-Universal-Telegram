@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +30,7 @@ public class SecondActivity extends AppCompatActivity{
     TextView articleBody;
     TextView articleTitle;
     Button clearButton;
+    ScrollView scrollView;
 
     private TextView mArticles;
     private Button requestArticles;
@@ -38,6 +40,8 @@ public class SecondActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
+        scrollView = (ScrollView) findViewById(R.id.scrollView);
 
         homeButton  = (Button) findViewById(R.id.home);
         requestArticles  = (Button) findViewById(R.id.GetArticles);
@@ -116,9 +120,9 @@ public class SecondActivity extends AppCompatActivity{
 
         super.onSaveInstanceState(savedInstanceState);
 
-        //savedInstanceState.putString("articleBody",(String)mArticles.getText().toString());
-        //savedInstanceState.putString("articleTitle",(String)articleTitle.getText().toString());
+
         savedInstanceState.putString("mArticles",(String)mArticles.getText().toString());
+
 
     }
 
@@ -126,9 +130,9 @@ public class SecondActivity extends AppCompatActivity{
     public void onRestoreInstanceState(Bundle savedInstanceState) {
 
         super.onRestoreInstanceState(savedInstanceState);
-        //articleBody.setText(savedInstanceState.getString("mArticles"));
-        //articleTitle.setText(savedInstanceState.getString("articleTitle"));
+
         mArticles.setText(savedInstanceState.getString("mArticles"));
+
 
     }
 
