@@ -9,7 +9,7 @@
     <View
         android:id="@+id/separator"
         android:layout_width="691dp"
-        android:layout_height="165dp"
+        android:layout_height="208dp"
         android:layout_marginTop="60dp"
         android:background="@android:color/white"
         android:visibility="visible" />
@@ -35,7 +35,7 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="154dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/title"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -60,8 +60,8 @@
         android:layout_height="45dp"
         android:layout_below="@+id/separator"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/paperbackground"
         android:text="@string/fact_check" />
 
@@ -71,8 +71,8 @@
         android:layout_height="45dp"
         android:layout_below="@+id/separator"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="178dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="185dp"
         android:background="@drawable/paperbackground"
         android:text="@string/finished_read" />
 
@@ -82,8 +82,8 @@
         android:layout_height="45dp"
         android:layout_below="@+id/separator"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="171dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/paperbackground"
         android:text="@string/submit_tag" />
 
@@ -93,8 +93,8 @@
         android:layout_height="45dp"
         android:layout_below="@+id/separator"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="51dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="61dp"
         android:background="@drawable/paperbackground"
         android:text="@string/return_home" />
 

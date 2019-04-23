@@ -9,7 +9,7 @@
     <View
         android:id="@+id/separator"
         android:layout_width="match_parent"
-        android:layout_height="276dp"
+        android:layout_height="365dp"
         android:layout_marginTop="60dp"
         android:background="@android:color/white"
         android:visibility="visible" />
@@ -35,7 +35,7 @@
 
     <ScrollView
         android:layout_width="391dp"
-        android:layout_height="268dp"
+        android:layout_height="350dp"
         android:layout_below="@+id/title"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -59,10 +59,10 @@
         android:layout_height="50dp"
         android:layout_below="@+id/separator"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="23dp"
-        android:text="@string/fact_check"
-        android:background="@drawable/paperbackground"/>
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/paperbackground"
+        android:text="@string/fact_check" />
 
     <Button
         android:id="@+id/submitTag"
@@ -70,10 +70,10 @@
         android:layout_height="50dp"
         android:layout_below="@+id/separator"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="63dp"
-        android:text="@string/finished_read"
-        android:background="@drawable/paperbackground"/>
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="66dp"
+        android:background="@drawable/paperbackground"
+        android:text="@string/finished_read" />
 
     <Button
         android:id="@+id/clearArticles"
@@ -81,8 +81,8 @@
         android:layout_height="50dp"
         android:layout_below="@+id/GetArticles"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="11dp"
         android:background="@drawable/paperbackground"
         android:text="@string/submit_tag" />
 
@@ -92,8 +92,8 @@
         android:layout_height="50dp"
         android:layout_below="@+id/submitTag"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="61dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="63dp"
         android:background="@drawable/paperbackground"
         android:text="@string/return_home" />
 
