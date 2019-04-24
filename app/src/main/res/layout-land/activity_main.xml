@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/iconbackground"
+    android:background="@drawable/woodbackground"
     tools:context=".MainActivity">
 
     <Button
@@ -13,7 +13,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="120dp"
         android:background="@drawable/paperbackground"
         android:text="@string/article_page"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,7 @@
         android:layout_width="141dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/paperbackground"
         android:text="@string/fireBaseTester"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +40,7 @@
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/paperbackground"
         android:text="@string/home_page_button"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +54,7 @@
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/paperbackground"
         android:text="@string/HeadlinesJSON"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -81,4 +81,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="381dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394"
+        app:srcCompat="@drawable/utlogo"
+        android:contentDescription="@string/universal_telegram_logo" />
 </android.support.constraint.ConstraintLayout>
